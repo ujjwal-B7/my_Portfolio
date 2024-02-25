@@ -13,6 +13,9 @@ button:active{
     color: white;
     opacity: 60%;
 }
+.p-bg{
+   @apply bg-white/[12%];
+}
 .flex-pack{
    @apply flex justify-between items-center 
 }
