@@ -5,6 +5,10 @@
 body{
     background-color: #121212;
 }
+button:active{
+    scale: 0.9;
+    transition: 0.2s all ease;
+}
 .p-color{
     color: white;
     opacity: 60%;
