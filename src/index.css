@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: #121212;
+}
+.p-color{
+    color: white;
+    opacity: 60%;
+}
+.flex-pack{
+   @apply flex justify-between items-center 
+}
