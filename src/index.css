@@ -2,19 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #121212;
+/* body{
+    /* background-color: #121212; */
+    /* background-color: #080808; */
+/* } */
+::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.nav{
+    background-color: rgb(50, 50, 50);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.border-custom{
+    border: 2px solid rgba(255, 255, 255, .1);
+}
+.border-custom:hover{
+    background-color: rgba(255, 255, 255, .1);
+    transition: all 0.3s ease;
+}
+.home{
+    background: url('./assets/home.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.overlay{
+    background-color: rgba(43, 42, 47, .7)
+}
+.section-one{
+    /* background-color: #121212; */
+    background-color: #292929;
+}
+.section-two{
+    background-color: #323232;
 }
 button:active{
     scale: 0.9;
     transition: 0.2s all ease;
 }
-.p-color{
-    color: white;
-    opacity: 60%;
+.main-theme-bg{
+    background-color: #16c0f0;
 }
-.p-bg{
-   @apply bg-white/[12%];
+.main-theme-text{
+    background-color: #16c0f0;
+}
+.primary-color{
+    color: #ffffff;
+}
+.secondary-color{
+    color: #333333;
 }
 .flex-pack{
    @apply flex justify-between items-center 

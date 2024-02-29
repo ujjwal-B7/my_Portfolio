@@ -25,18 +25,20 @@ const Nav = () => {
     html2pdf().from(itemsPdf).set(pdfOptions).save();
   };
   return (
-    <nav className="flex-pack lg:px-16 md:px-12 px-4 h-16">
-      <h1 className="p-color text-2xl font-semibold">Ujjwal Basnet</h1>
-      <button
-        className="bg-white/[12%] p-color rounded-lg p-2"
-        onClick={pdfDownload}
-      >
-        Download Resume
-      </button>
-      <div className="hidden h-screen w-[50%] absolute top-5">
-        <img id="cv" src={cv} alt="my cv" />
-      </div>
-    </nav>
+    <header className="nav">
+      <nav className="container primary-color flex-pack px-2 h-16">
+        <h1 className=" text-2xl font-semibold">Ujjwal Basnet</h1>
+        <button
+          className="section rounded-lg p-2 border-custom"
+          onClick={pdfDownload}
+        >
+          Download Resume
+        </button>
+        <div className="hidden h-screen w-[50%] absolute top-5">
+          <img id="cv" src={cv} alt="my cv" />
+        </div>
+      </nav>
+    </header>
   );
 };
 
