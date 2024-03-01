@@ -36,11 +36,11 @@ const Contact = () => {
       });
   };
   return (
-    <section className="section-one h-screen">
-      <div className="containers px-2 py-10">
-        <h2 className="main-title">CONTACT ME</h2>
-        <div className="flex gap-5">
-          <div className="border-second w-[30%] p-4">
+    <section className="section-one">
+      <div className="containers px-2 py-16">
+        <h2 className="main-title md:text-start text-center">CONTACT ME</h2>
+        <div className="flex md:flex-row flex-col gap-10 items-center mt-7">
+          <div className="border-second md:w-[35%] w-[80%] p-4 space-y-9 md:self-start">
             <div className="mb-7">
               <div className="contact-details elements-center gap-1">
                 <span>
@@ -125,74 +125,60 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="border-second w-[50%]">
-            <form ref={form} onSubmit={sendEmail}>
-              <div className="mb-6">
-                <label
-                  htmlFor="user_name"
-                  className="block mb-2 font-medium text-gray-300"
-                >
-                  Full Name
-                </label>
+          <div className="border-second md:w-[60%] w-[80%] form">
+            <form ref={form} onSubmit={sendEmail} className="p-4 space-y-9">
+              <div className="mb-6 input-group">
+                {/* <label htmlFor="user_name" className="placeholder">
+                  Name
+                </label> */}
                 <input
                   required
                   type="text"
                   name="user_name"
-                  className="block w-80 lg:w-96 p-2.5 text-gray-300 bg-transparent border border-white/30 hover:border-white/60 focus:outline-none focus:border-white/60 rounded-lg placeholder-gray-500"
-                  placeholder="Enter your full name"
+                  className="input"
+                  placeholder="Name"
                 />
               </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="user_email"
-                  className="block mb-2 font-medium text-gray-300"
-                >
-                  Email Address
-                </label>
+              <div className="mb-6 input-group">
+                {/* <label htmlFor="user_email" className="">
+                  Email
+                </label> */}
                 <input
                   type="email"
                   name="user_email"
-                  className="block w-80 lg:w-96 p-2.5 text-gray-300 bg-transparent border border-white/30 hover:border-white/60 focus:outline-none focus:border-white/60 rounded-lg placeholder-gray-500"
-                  placeholder="Enter your email address"
+                  className="input"
+                  placeholder="Email"
                 />
               </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="user_number"
-                  className="block mb-2 font-medium text-gray-300"
-                >
-                  Contact Number
-                </label>
+              <div className="mb-6 input-group">
+                {/* <label htmlFor="user_number" className="">
+                  Number
+                </label> */}
                 <input
                   required
                   type="text"
                   name="user_number"
-                  className="block w-80 lg:w-96 p-2.5 text-gray-300 bg-transparent border border-white/30 hover:border-white/60 focus:outline-none focus:border-white/60 rounded-lg placeholder-gray-500"
-                  placeholder="Enter your contact number"
+                  className="input"
+                  placeholder="Number"
                 />
               </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="message"
-                  className="block mb-2 font-medium text-gray-300"
-                >
+              <div className="mb-6 input-group">
+                {/* <label htmlFor="message" className="">
                   Message
-                </label>
+                </label> */}
                 <textarea
                   required
                   name="message"
-                  className="block w-80 lg:w-96 p-2.5 text-gray-300 bg-transparent border border-white/30 hover:border-white/60 focus:outline-none focus:border-white/60 rounded-lg placeholder-gray-500"
-                  placeholder="Enter your message"
+                  className="input"
+                  placeholder="Message"
                 />
               </div>
               {loading ? (
-                <div className="button w-80 lg:w-96 text-center">
-                  Sending...
-                </div>
+                <div className="button-2">Sending...</div>
               ) : (
                 <input
                   type="submit"
-                  className="button w-80 lg:w-96 cursor-pointer"
+                  className="montserrat button-2 fill-up-button"
                   value="Send"
                 />
               )}

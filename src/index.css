@@ -136,3 +136,57 @@ button:active{
 .contact-text{
     @apply pt-4 font-[600] text-center text-[#c3c0c3] text-[13px]
 }
+
+/* .form label{
+    position: absolute;
+    left: 25px;
+    color: #c3c0c3;
+    font-size: 14px;
+    transition: 0.3s all ease;
+}
+.form input,.form textarea{
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .4)
+}
+.form input:focus + label{
+    top: -5px;
+    transition: 0.3s all ease;
+    border-bottom: 1px solid #16c0f0
+} */
+.input-group{
+    position: relative;
+}
+.input{
+    color: #c3c0c3;
+    padding: 15px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .4)
+}
+.input:focus{
+    outline: none;
+}
+.button-2{
+    @apply text-white font-[600] w-full rounded-3xl main-theme-bg py-2 cursor-pointer
+}
+/*  */
+/* .placeholder{
+    color: #c3c0c3;
+    position:absolute;
+    top: 5px;
+    left: 15px;
+  font-size: 14px;
+transition: 0.3s;
+pointer-events: none;
+} */
+/* 
+.input:focus + .placeholder{
+    color: #c3c0c3;
+    position:absolute;
+    top: -15px;
+    left: -10px;
+  font-size: 14px;
+transition: 0.3s;
+pointer-events: none; */
+/* } */
