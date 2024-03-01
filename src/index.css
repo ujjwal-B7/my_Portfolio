@@ -2,18 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     /* background-color: #121212; */
     /* background-color: #080808; */
-/* } */
+    font-family: 'Open Sans', sans-serif;
+ }
 ::-webkit-scrollbar{
     display: none;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.opensans{
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     max-width: 1200px;
     margin: auto;
 }
 .nav{
+    z-index: 1000;
+    /* background-color: rgb(50, 50, 50); */
+    background-color: rgba(43, 42, 47, 0.485);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.nav-after{
+    z-index: 1000;
     background-color: rgb(50, 50, 50);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
@@ -51,7 +70,7 @@ button:active{
     background-color: #16c0f0;
 }
 .main-theme-text{
-    background-color: #16c0f0;
+    color: #16c0f0;
 }
 .primary-color{
     color: #ffffff;
