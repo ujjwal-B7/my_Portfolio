@@ -4,7 +4,6 @@ import html2pdf from "html2pdf.js";
 
 const Nav = () => {
   const [scroll, setScroll] = useState(0);
-  const [color, setColor] = useState(false);
 
   const handleScroll = () => {
     setScroll(window.scrollY);
@@ -33,7 +32,7 @@ const Nav = () => {
   };
   return (
     <header className={`${scroll > 190 ? "nav-after" : "nav"} fixed w-full`}>
-      <nav className="container primary-color flex-pack px-2 h-14">
+      <nav className="containers primary-color flex-pack px-2 h-14">
         <h1 className="montserrat md:text-2xl text-xl font-semibold">
           <span className="main-theme-text">U</span>
           jjwal Basnet

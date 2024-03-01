@@ -21,7 +21,7 @@ body{
 .opensans{
     font-family: 'Open Sans', sans-serif;
 }
-.container{
+.containers{
     max-width: 1200px;
     margin: auto;
 }
@@ -42,6 +42,9 @@ body{
 .border-custom:hover{
     background-color: rgba(255, 255, 255, .1);
     transition: all 0.3s ease;
+}
+.border-second{
+    border: 2px solid rgba(255, 255, 255, .1);
 }
 .home{
     background: url('./assets/home.jpg') center center no-repeat fixed;
@@ -78,16 +81,58 @@ button:active{
 .secondary-color{
     color: #333333;
 }
+.third-color{
+    color: #c3c0c3;
+}
 .flex-pack{
    @apply flex justify-between items-center 
 }
-
+.elements-center{
+    @apply flex justify-center items-center
+}
   
  .fill-up-button{
     border: 2px solid #16c0f0;
  }
   .fill-up-button:hover{
-    color: #16c0f0;
+    /* color: #16c0f0; */
     background-color: transparent;
     transition: 0.3s all ease;
   }
+
+  .main-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: .7px;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.contact-details{
+    position: relative;
+    background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 24px;
+}
+.triangle-down {
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Adjust this value as needed */
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #16c0f0; /* Change color if needed */
+    transform: translateX(-50%);
+  }
+  
+.contact-text{
+    @apply pt-4 font-[600] text-center text-[#c3c0c3] text-[13px]
+}
