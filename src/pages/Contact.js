@@ -1,10 +1,8 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { toast } from "react-hot-toast";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const [showNotification, setShowNotification] = useState(false);
-  const [showError, setShowError] = useState(false);
   const form = useRef();
   const resetForm = () => {
     form.current.reset();
@@ -18,29 +16,51 @@ const Contact = () => {
       })
       .then(
         () => {
-          setShowNotification(true);
-          setTimeout(() => {
-            setShowNotification(false);
-            resetForm();
-          }, 2000);
+          toast.success("Email sent successfully.", {
+            style: {
+              marginBottom: "1rem",
+              background: "#16c0f0",
+              color: "#fff",
+            },
+            duration: 2500,
+          });
+          resetForm();
+          setLoading(false);
         },
         (error) => {
-          setShowError(true);
-          setTimeout(() => {
-            setShowError(false);
-          }, 2000);
+          toast.error("Email sending failed. Try again!!", {
+            style: {
+              marginBottom: "1rem",
+              background: "#16c0f0",
+              color: "#fff",
+            },
+            duration: 2500,
+          });
         }
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+      );
+  };
+
+  const show = () => {
+    toast.success("Email sent successfully.", {
+      style: {
+        marginBottom: "1rem",
+        background: "#16c0f0",
+        color: "#fff",
+        autoClose: 1500,
+      },
+      duration: 2500,
+    });
   };
   return (
-    <section className="section-one">
+    <section id="contact" className="section-one">
+      {/* <button onClick={show}>click</button> */}
       <div className="containers px-2 py-16">
         <h2 className="main-title md:text-start text-center">CONTACT ME</h2>
         <div className="flex md:flex-row flex-col gap-10 items-center mt-7">
-          <div className="border-second md:w-[35%] w-[80%] p-4 space-y-9 md:self-start">
+          <div
+            className="border-second md:w-[35%] w-[80%] px-5 py-[4.6rem] space-y-9 md:self-start"
+            data-aos="fade-left"
+          >
             <div className="mb-7">
               <div className="contact-details elements-center gap-1">
                 <span>
@@ -68,8 +88,7 @@ const Contact = () => {
                 <div className="triangle-down"></div>
               </div>
               <div className="contact-text">
-                <p>Kalopul, Kathmandu</p>
-                <p>Nepal</p>
+                <p>Kalopul, Kathmandu,Nepal</p>
               </div>
             </div>
             <div className="mb-7">
@@ -125,7 +144,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="border-second md:w-[60%] w-[80%] form">
+          <div
+            className="border-second md:w-[60%] w-[80%] form"
+            data-aos="fade-right"
+          >
             <form ref={form} onSubmit={sendEmail} className="p-4 space-y-9">
               <div className="mb-6 input-group">
                 {/* <label htmlFor="user_name" className="placeholder">
@@ -174,11 +196,13 @@ const Contact = () => {
                 />
               </div>
               {loading ? (
-                <div className="button-2">Sending...</div>
+                <div className="montserrat button-2 button-hover text-center">
+                  Sending...
+                </div>
               ) : (
                 <input
                   type="submit"
-                  className="montserrat button-2 fill-up-button"
+                  className="montserrat button-2 button-hover"
                   value="Send"
                 />
               )}

@@ -6,7 +6,7 @@ const Home = () => {
   useEffect(() => {
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, {
-        strings: ["I'm a Web Developer", "I Love Software Development"],
+        strings: ["Developer", "Designer"],
         typeSpeed: 100,
         backSpeed: 80,
         loop: true,
@@ -18,7 +18,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section className="home">
+      <section id="home" className="home">
         <div className="overlay w-full h-screen ">
           <div className="containers flex items-center h-screen px-2">
             <div>
@@ -29,16 +29,40 @@ const Home = () => {
                 Ujjwal Basnet
               </h1>
               <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl md:pb-7 pb-5">
-                <span ref={typedRef}></span>
+                <span>I'm a Web </span>
+                <span ref={typedRef}> </span>
               </h3>
-              <button className="main-theme-bg rounded-3xl uppercase text-[12px] tracking-[1px] font-[600] text-white px-9 py-3 fill-up-button">
+              <a
+                href="#contact"
+                className="main-theme-bg rounded-3xl uppercase text-[12px] tracking-[1px] font-[600] text-white px-9 py-4 fill-up-button"
+              >
                 Hire Me
-              </button>
+              </a>
             </div>
           </div>
         </div>
+        <a
+          href="#home"
+          className="main-theme-bg p-3 fixed bottom-4 right-4 rounded-full button animate-bounce button-hover"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+              />
+            </svg>
+          </span>
+        </a>
       </section>
-      <div className="section-two h-screen"></div>
     </>
   );
 };

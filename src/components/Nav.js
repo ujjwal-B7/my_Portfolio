@@ -33,10 +33,15 @@ const Nav = () => {
   return (
     <header className={`${scroll > 190 ? "nav-after" : "nav"} fixed w-full`}>
       <nav className="containers primary-color flex-pack px-2 h-14">
-        <h1 className="montserrat md:text-2xl text-xl font-semibold">
+        <a
+          href="#home"
+          className="montserrat md:text-2xl text-xl font-semibold"
+        >
           <span className="main-theme-text">U</span>
-          jjwal Basnet
-        </h1>
+          jjwal
+          <span className="main-theme-text"> B</span>
+          asnet
+        </a>
         <button
           className="section rounded-lg p-2 text-sm border-custom"
           onClick={pdfDownload}

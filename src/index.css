@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     /* background-color: #121212; */
     /* background-color: #080808; */
@@ -47,7 +50,8 @@ body{
     border: 2px solid rgba(255, 255, 255, .1);
 }
 .home{
-    background: url('./assets/home.jpg') center center no-repeat fixed;
+    /* background: url('./assets/home.jpg') center center no-repeat fixed; */
+    background: url('./assets/Ujjwal3.jpg') center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -56,7 +60,7 @@ body{
     height: 100vh;
 }
 .overlay{
-    background-color: rgba(43, 42, 47, .7)
+    background-color: rgba(43, 42, 47, 0.616)
 }
 .section-one{
     /* background-color: #121212; */
@@ -65,9 +69,12 @@ body{
 .section-two{
     background-color: #323232;
 }
-button:active{
+.button:active{
     scale: 0.9;
     transition: 0.2s all ease;
+}
+.btn:hover{
+
 }
 .main-theme-bg{
     background-color: #16c0f0;
@@ -102,7 +109,7 @@ button:active{
 
   .main-title {
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 600;
     font-size: 28px;
     letter-spacing: .7px;
@@ -170,6 +177,15 @@ button:active{
 .button-2{
     @apply text-white font-[600] w-full rounded-3xl main-theme-bg py-2 cursor-pointer
 }
+.button-hover:hover{
+    @apply bg-[#319be6];
+    transition: 0.4s all ease;
+}
+.skills-text{
+    color: white;
+    font-weight: 600;
+}
+
 /*  */
 /* .placeholder{
     color: #c3c0c3;
