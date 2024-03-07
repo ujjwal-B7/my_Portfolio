@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="flex md:flex-row flex-col gap-10 items-center mt-7">
           <div
             className="border-second md:w-[35%] w-[80%] px-5 py-[4.6rem] space-y-9 md:self-start"
-            data-aos="fade-left"
+            data-aos="fade-right"
           >
             <div className="mb-7">
               <div className="contact-details elements-center gap-1">
@@ -146,7 +146,7 @@ const Contact = () => {
           </div>
           <div
             className="border-second md:w-[60%] w-[80%] form"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             <form ref={form} onSubmit={sendEmail} className="p-4 space-y-9">
               <div className="mb-6 input-group">

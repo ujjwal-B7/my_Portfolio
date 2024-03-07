@@ -28,7 +28,7 @@ const Home = () => {
               <h1 className="lg:text-6xl sm:text-5xl text-[45px] font-[800] text-white md:py-7 py-5">
                 Ujjwal Basnet
               </h1>
-              <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl md:pb-7 pb-5">
+              <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl pb-7">
                 <span>I'm a Web </span>
                 <span ref={typedRef}> </span>
               </h3>

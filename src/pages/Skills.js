@@ -247,8 +247,10 @@ const skillsArray = [
 const Skills = () => {
   return (
     <section id="skills" className="section-two">
-      <div className="containers px-2 py-36">
-        <h2 className="main-title md:text-start text-center">My TechStack</h2>
+      <div className="containers px-2 lg:py-36 py-20">
+        <h2 className="main-title md:text-start text-center uppercase">
+          My TechStack
+        </h2>
         <div className="flex justify-center mx-auto items-center lg:gap-9 gap-7 text-center flex-wrap mt-7">
           {skillsArray.map((skill) => (
             <div
