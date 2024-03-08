@@ -9,6 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding: 4rem;
 }
 body{
     /* background-color: #121212; */
@@ -74,9 +75,6 @@ body{
 .button:active{
     scale: 0.9;
     transition: 0.2s all ease;
-}
-.btn:hover{
-
 }
 .main-theme-bg{
     background-color: #16c0f0;
@@ -186,6 +184,14 @@ body{
 .skills-text{
     color: white;
     font-weight: 600;
+}
+.custom-shadow{
+    box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.305);
+}
+@media (max-width:1000px){
+    .skills-card{
+        justify-content: center;
+    }
 }
 
 /*  */
