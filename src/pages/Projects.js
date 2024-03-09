@@ -9,7 +9,7 @@ const Projects = () => {
         </h2>
         <div className="grid lg:grid-cols-3 xs:grid-cols-2 md:gap-5 gap-y-10 place-items-center mt-7">
           {projects.map((project) => (
-            <div className="hover-card custom-shadow lg:w-full w-[87%] rounded-lg">
+            <div className="hover-card custom-shadow lg:w-[90%] w-[87%] rounded-lg">
               <div className="w-full lg:aspect-[4/3] aspect-[4/2.5] relative">
                 <div className="overlay-project overflow-hidden top-0 left-0 absolute w-full h-0 bg-black/50 flex items-center justify-center rounded-lg">
                   <a
