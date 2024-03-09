@@ -50,9 +50,19 @@ body{
 .border-second{
     border: 2px solid rgba(255, 255, 255, .1);
 }
-.home{
+ /* .home{ */
     /* background: url('./assets/home.jpg') center center no-repeat fixed; */
-    background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
+    /* background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh; */
+/* } */
+.home {
+    background: url('./assets/Ujjwal3.jpg') center no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,6 +70,7 @@ body{
     position: relative;
     height: 100vh;
 }
+
 .overlay{
     background-color: rgba(43, 42, 47, 0.616)
    /* background-color: rgba(43, 42, 47, 0.714) */
