@@ -18,10 +18,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section
-        id="home"
-        className=" home"
-      >
+      <section id="home" className=" home">
         <div className="overlay w-full h-screen ">
           <div className="containers flex items-center h-screen px-2">
             <div>
@@ -46,7 +43,7 @@ const Home = () => {
         </div>
         <a
           href="#home"
-          className="main-theme-bg p-3 fixed bottom-4 right-4 rounded-full button animate-bounce button-hover"
+          className="z-50 main-theme-bg p-3 fixed bottom-4 right-4 rounded-full button animate-bounce button-hover"
         >
           <span>
             <svg

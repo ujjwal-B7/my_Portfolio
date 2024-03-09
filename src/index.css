@@ -208,6 +208,10 @@ body{
     }
 }
 
+.hover-card:hover .overlay-project{
+height: 100%;
+transition: all ease 0.3s;
+}
 /*  */
 /* .placeholder{
     color: #c3c0c3;
