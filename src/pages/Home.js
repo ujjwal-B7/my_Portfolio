@@ -18,7 +18,10 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section id="home" className="home">
+      <section
+        id="home"
+        className=" home"
+      >
         <div className="overlay w-full h-screen ">
           <div className="containers flex items-center h-screen px-2">
             <div>
