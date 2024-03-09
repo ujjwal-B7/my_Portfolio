@@ -291,7 +291,7 @@ const Skills = () => {
         <div className="skills-card flex  mx-auto items-center lg:gap-9 md:gap-7 gap-3 text-center flex-wrap mt-7">
           {skillsArray.map((skill) => (
             <div
-              className="custom-shadow space-y-3 md:w-32 md:h-32 sm:h-28 sm:w-28 w-20 h-20 py-2 rounded-lg montserrat flex flex-col items-center justify-center text-[0.7rem]"
+              className="custom-shadow space-y-3 md:w-32 md:h-32 sm:h-28 sm:w-28 w-20 h-20 py-2 rounded-lg montserrat flex flex-col items-center justify-center md:text-[1rem] text-[0.7rem]"
               data-aos="flip-left"
             >
               <span>{skill.logo}</span>

@@ -50,12 +50,25 @@ body{
 .border-second{
     border: 2px solid rgba(255, 255, 255, .1);
 }
- .home{
+ /* .home{
     /* background: url('./assets/home.jpg') center center no-repeat fixed; */ 
-    background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
+    /* background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh; */
+/* } */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.home{
+    background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
     background-size: cover;
     position: relative;
     height: 100vh;
