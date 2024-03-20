@@ -217,6 +217,11 @@ body{
         justify-content: center;
     }
 }
+@media (max-width:768px){
+    .projects{
+        place-items: center;
+    }
+}
 
 .hover-card:hover .overlay-project{
 height: 100%;

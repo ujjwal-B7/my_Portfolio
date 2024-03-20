@@ -7,7 +7,7 @@ const Projects = () => {
         <h2 className="main-title md:text-start text-center uppercase">
           Projects
         </h2>
-        <div className="grid lg:grid-cols-3 xs:grid-cols-2 md:gap-5 gap-y-10 mt-7">
+        <div className="projects grid lg:grid-cols-3 xs:grid-cols-2 md:gap-5 gap-y-10 mt-7">
           {projects.map((project) => (
             <div
               key={project.link}
