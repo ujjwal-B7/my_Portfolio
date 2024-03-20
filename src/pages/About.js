@@ -35,7 +35,7 @@ const About = () => {
             </p>
             <div className="personal-info relative bg-[#292929] w-full mt-7 p-4">
               <div>
-                <span>
+                <span className="first-span">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -54,7 +54,7 @@ const About = () => {
                 <p className="pt-2">Ujjwal Basnet</p>
               </div>
               <div>
-                <span>
+                <span className="second-span">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

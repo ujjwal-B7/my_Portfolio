@@ -239,6 +239,7 @@ transition: all ease 0.3s;
     align-items: center;
     gap: 1rem;
 }
+
 .personal-info div span{
     color: #fff;
     background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
@@ -261,7 +262,26 @@ padding: 7px;
     content: '';
     width: 0;
 }
-
+@media (max-width:419px) {
+    .personal-info div .second-span::before{
+        content: '';
+        background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
+        width: 2px;
+        height: 30px;
+        position: absolute;
+        top: 45px;
+        left: 16px;
+    }
+    .personal-info div .first-span::before{
+        content: '';
+        background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
+        width: 2px;
+        height: 30px;
+        position: absolute;
+        top: 34px;
+        left: 16px;
+    }
+}
 .personal-info .social-media{
     position: absolute;
     top: 50%;
