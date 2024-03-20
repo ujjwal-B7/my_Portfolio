@@ -68,8 +68,8 @@ body{
 */
 
 .home{
-    background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
-    background-size: cover;
+    /* background: url('./assets/Ujjwal3.jpg') center no-repeat fixed;
+    background-size: cover; */
     position: relative;
     height: 100vh;
 }

@@ -18,9 +18,21 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section id="home" className=" home">
+      <section id="home" className="home">
+        <div className="w-full h-screen fixed  -z-10">
+          <img
+            className="sm:block hidden w-full h-screen object-cover object-center"
+            src="./images/Ujjwal3.jpg"
+            alt=""
+          />
+          <img
+            className="block sm:hidden w-full h-screen object-cover "
+            src="./images/UjjwalMob.jpg"
+            alt=""
+          />
+        </div>
         <div className="overlay w-full h-screen ">
-          <div className="containers flex items-center h-screen px-2">
+          <div className="containers flex items-center h-screen px-4">
             <div>
               <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl">
                 Hey, My Name Is

@@ -16,7 +16,7 @@ const Contact = () => {
       })
       .then(
         () => {
-          toast.success("Email sent successfully.", {
+          toast.success("Message sent successfully.", {
             style: {
               marginBottom: "1rem",
               background: "#16c0f0",
@@ -28,7 +28,7 @@ const Contact = () => {
           setLoading(false);
         },
         (error) => {
-          toast.error("Email sending failed. Try again!!", {
+          toast.error("Message sending failed. Try again!!", {
             style: {
               marginBottom: "1rem",
               background: "#16c0f0",

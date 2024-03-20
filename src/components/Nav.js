@@ -32,7 +32,7 @@ const Nav = () => {
   };
   return (
     <header className={`${scroll > 190 ? "nav-after" : "nav"} fixed w-full`}>
-      <nav className="containers primary-color flex-pack px-2 h-14">
+      <nav className="containers primary-color flex-pack px-4 h-14">
         <a
           href="#home"
           className="montserrat md:text-2xl text-xl font-semibold"

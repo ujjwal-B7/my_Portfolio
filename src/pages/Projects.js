@@ -13,7 +13,7 @@ const Projects = () => {
               <div className="w-full lg:aspect-[4/3] aspect-[4/2.5] relative">
                 <div className="overlay-project overflow-hidden top-0 left-0 absolute w-full h-0 bg-black/50 flex items-center justify-center rounded-lg">
                   <a
-                    className=" bg-white/90 px-5 py-2 rounded-2xl hover:rounded-3xl transition-all montserrat"
+                    className="bg-white/90 px-5 py-2 rounded-2xl hover:rounded-3xl transition-all montserrat"
                     href={project.link}
                     target="_blank"
                   >
@@ -23,7 +23,7 @@ const Projects = () => {
                 <img
                   className="w-full h-full object-cover rounded-lg"
                   src={project.image}
-                  alt="project-image"
+                  alt="projects"
                 />
               </div>
               <div className="px-2 py-5">
