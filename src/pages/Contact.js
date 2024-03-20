@@ -113,7 +113,11 @@ const Contact = () => {
                 <div className="triangle-down"></div>
               </div>
               <div className="contact-text">
-                <p>basnetujjwal98@gmail.com</p>
+                <p>
+                  <a href="mailto:basnetujjwal98@gmail.com">
+                    basnetujjwal98@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
             <div>
@@ -139,7 +143,8 @@ const Contact = () => {
               </div>
               <div className="contact-text">
                 <p>
-                  +977 - 9814313435 <br /> +977 - 9844451004
+                  <a href="tel:+9779814313435">+977 - 9814313435</a> <br />
+                  <a href="tel:+9844451004">+977 - 9844451004</a>
                 </p>
               </div>
             </div>

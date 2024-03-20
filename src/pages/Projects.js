@@ -3,13 +3,17 @@ import { projects } from "../components/ProjectsArray";
 const Projects = () => {
   return (
     <section id="skills" className="section-one">
-      <div className="containers px-2 py-16">
+      <div className="containers px-2 lg:py-32 py-16">
         <h2 className="main-title md:text-start text-center uppercase">
           Projects
         </h2>
-        <div className="grid lg:grid-cols-3 xs:grid-cols-2 md:gap-5 gap-y-10 place-items-center mt-7">
+        <div className="grid lg:grid-cols-3 xs:grid-cols-2 md:gap-5 gap-y-10 mt-7">
           {projects.map((project) => (
-            <div className="hover-card custom-shadow lg:w-[90%] w-[87%] rounded-lg">
+            <div
+              key={project.link}
+              className="hover-card custom-shadow lg:w-[90%] w-[87%] rounded-lg"
+              data-aos="zoom-in"
+            >
               <div className="w-full lg:aspect-[4/3] aspect-[4/2.5] relative">
                 <div className="overlay-project overflow-hidden top-0 left-0 absolute w-full h-0 bg-black/50 flex items-center justify-center rounded-lg">
                   <a
@@ -30,7 +34,6 @@ const Projects = () => {
                 <h1 className="font-[600] text-white mb-3">{project.name}</h1>
                 <p className="third-color">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Labore tempore obcaecati temporibus non quisquam ad fuga
                 </p>
               </div>
             </div>

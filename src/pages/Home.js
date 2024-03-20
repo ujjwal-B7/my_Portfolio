@@ -34,22 +34,38 @@ const Home = () => {
         <div className="overlay w-full h-screen ">
           <div className="containers flex items-center h-screen px-4">
             <div>
-              <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl">
+              <h3
+                className="text-[#c3c0c0] montserrat font-semibold text-2xl"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 Hey, My Name Is
               </h3>
-              <h1 className="lg:text-6xl sm:text-5xl text-[45px] font-[800] text-white md:py-7 py-5">
+              <h1
+                className="lg:text-6xl sm:text-5xl text-[45px] font-[800] text-white md:py-7 py-5"
+                data-aos="fade-up"
+                data-aos-duration="1300"
+              >
                 Ujjwal Basnet
               </h1>
-              <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl pb-7">
+              <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl pb-7"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              >
                 <span>I'm a Web </span>
                 <span ref={typedRef}> </span>
               </h3>
-              <a
-                href="#contact"
-                className="main-theme-bg rounded-3xl uppercase text-[12px] tracking-[1px] font-[600] text-white px-9 py-4 fill-up-button"
+              <div 
+               data-aos="fade-up"
+               data-aos-duration="1700"
               >
+              <a
+             href="#contact"
+             className="main-theme-bg rounded-3xl uppercase text-[12px] tracking-[1px] font-[600] text-white px-9 py-4 fill-up-button"
+             >
                 Hire Me
               </a>
+                </div>
             </div>
           </div>
         </div>

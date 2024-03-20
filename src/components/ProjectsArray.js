@@ -9,9 +9,5 @@ exports.projects = [
     link: "https://demotemplatee.netlify.app/",
     name: "Landing for business website",
   },
-  {
-    image: "./images/demoTemplate.png",
-    link: "https://demotemplatee.netlify.app/",
-    name: "Landing for business website",
-  },
+ 
 ];

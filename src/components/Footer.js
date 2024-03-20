@@ -4,6 +4,44 @@ const Footer = () => {
   return (
     <footer className="section-two text-white py-10 text-center">
       <div className="flex justify-center gap-4 mb-4">
+        <p>
+          <a target="_blank" href="https://www.facebook.com/ujjwal.basnet.1257">
+            <svg className="w-7" viewBox="0 0 128 128">
+              <rect
+                fill="#16c0f0"
+                x="4.83"
+                y="4.83"
+                width="118.35"
+                height="118.35"
+                rx="6.53"
+                ry="6.53"
+              ></rect>
+              <path
+                fill="#393939"
+                d="M86.48 123.17V77.34h15.38l2.3-17.86H86.48v-11.4c0-5.17 1.44-8.7 8.85-8.7h9.46v-16A126.56 126.56 0 0091 22.7c-13.62 0-23 8.3-23 23.61v13.17H52.62v17.86H68v45.83z"
+              ></path>
+            </svg>
+          </a>
+        </p>
+        <div>
+          <a target="_blank" href="https://www.instagram.com/ujjwal_basnet7/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-7 ionicon"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#16c0f0"
+                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+              />
+              <path
+                fill="#16c0f0"
+                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+              />
+            </svg>
+          </a>
+        </div>
+
         <div>
           <a href="https://www.linkedin.com/in/ujjwal-basnet-560893239/">
             <span>
