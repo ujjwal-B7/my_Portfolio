@@ -71,7 +71,7 @@ const Home = () => {
         </div>
         <a
           href="#home"
-          className="z-50 main-theme-bg p-3 fixed bottom-4 right-4 rounded-full button animate-bounce button-hover"
+          className="z-50 main-theme-bg p-3 fixed bottom-4 left-4 rounded-full button animate-bounce button-hover"
         >
           <span>
             <svg
