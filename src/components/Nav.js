@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const Nav = () => {
   const [scroll, setScroll] = useState(0);
 
@@ -8,7 +7,6 @@ const Nav = () => {
     setScroll(window.scrollY);
   };
   window.addEventListener("scroll", handleScroll);
- 
 
   return (
     <header className={`${scroll > 190 ? "nav-after" : "nav"} fixed w-full`}>
@@ -22,10 +20,8 @@ const Nav = () => {
           <span className="main-theme-text"> B</span>
           asnet
         </a>
-        <a href="https://drive.google.com/uc?export=download&id=1-i_JsXTGzMMwxlMVD4_VzxwmG_jfz5QS">
-          <button
-            className="section rounded-lg p-2 text-sm border-custom"
-          >
+        <a href="./images/Ujjwal-Basnet-cv.pdf" download>
+          <button className="section rounded-lg p-2 text-sm border-custom">
             Download Resume
           </button>
         </a>
