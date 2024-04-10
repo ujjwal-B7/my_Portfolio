@@ -18,11 +18,10 @@ const Contact = () => {
         () => {
           toast.success("Message sent successfully.", {
             style: {
-              marginBottom: "1rem",
+              marginTop: "3rem",
               background: "#16c0f0",
               color: "#fff",
             },
-            duration: 2500,
           });
           resetForm();
           setLoading(false);
@@ -30,27 +29,24 @@ const Contact = () => {
         (error) => {
           toast.error("Message sending failed. Try again!!", {
             style: {
-              marginBottom: "1rem",
+              marginTop: "3rem",
               background: "#16c0f0",
               color: "#fff",
             },
-            duration: 2500,
           });
         }
       );
   };
 
-  const show = () => {
-    toast.success("Email sent successfully.", {
-      style: {
-        marginBottom: "1rem",
-        background: "#16c0f0",
-        color: "#fff",
-        autoClose: 1500,
-      },
-      duration: 2500,
-    });
-  };
+  // const show = () => {
+  //   toast.success("Email sent successfully.", {
+  //     style: {
+  //       marginTop: "3rem",
+  //       background: "#16c0f0",
+  //       color: "#fff",
+  //     },
+  //   });
+  // };
   return (
     <section id="contact" className="section-one">
       {/* <button onClick={show}>click</button> */}

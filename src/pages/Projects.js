@@ -20,6 +20,7 @@ const Projects = () => {
                     className="bg-white/90 px-5 py-2 rounded-2xl hover:rounded-3xl transition-all montserrat"
                     href={project.link}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Visit Site
                   </a>

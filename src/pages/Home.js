@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Typed } from "react-typed";
 const Home = () => {
   const typedRef = useRef(null);
+  const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
     if (typedRef.current) {
@@ -16,6 +17,11 @@ const Home = () => {
       };
     }
   }, []);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY);
+  };
+  window.addEventListener("scroll", handleScroll);
   return (
     <>
       <section id="home" className="home">
@@ -48,30 +54,30 @@ const Home = () => {
               >
                 Ujjwal Basnet
               </h1>
-              <h3 className="text-[#c3c0c0] montserrat font-semibold text-2xl pb-7"
-              data-aos="fade-up"
-              data-aos-duration="1500"
+              <h3
+                className="text-[#c3c0c0] montserrat font-semibold text-2xl pb-7"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 <span>I'm a Web </span>
                 <span ref={typedRef}> </span>
               </h3>
-              <div 
-               data-aos="fade-up"
-               data-aos-duration="1700"
-              >
-              <a
-             href="#contact"
-             className="main-theme-bg rounded-3xl uppercase text-[12px] tracking-[1px] font-[600] text-white px-9 py-4 fill-up-button"
-             >
-                Hire Me
-              </a>
-                </div>
+              <div data-aos="fade-up" data-aos-duration="1700">
+                <a
+                  href="#contact"
+                  className="main-theme-bg rounded-3xl uppercase text-[12px] tracking-[1px] font-[600] text-white px-9 py-4 fill-up-button"
+                >
+                  Hire Me
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <a
           href="#home"
-          className="z-50 main-theme-bg p-3 fixed bottom-4 left-4 rounded-full button animate-bounce button-hover"
+          className={`${
+            scroll > 600 ? "block" : "hidden"
+          } z-50 main-theme-bg p-3 fixed bottom-4 left-4 rounded-full button animate-bounce button-hover`}
         >
           <span>
             <svg

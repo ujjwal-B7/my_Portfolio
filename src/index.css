@@ -19,6 +19,10 @@ body{
 ::-webkit-scrollbar{
     display: none;
 }
+button:active{
+    scale: 0.97;
+    transition: all 0.2s ease;
+}
 .montserrat{
     font-family: 'Montserrat', sans-serif;
 }
@@ -287,7 +291,7 @@ padding: 7px;
     top: 50%;
     transform: translateY(-50%);
     right: -12px;
-    height: 70%;
+    height: 75%;
     width: 35px;
     background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
     text-align: center;
